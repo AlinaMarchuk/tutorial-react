@@ -6,6 +6,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import ListItemButton from '@mui/material/ListItemButton';
 import List from '@mui/material/List';
 import ListSubheader from '@mui/material/ListSubheader';
+import ListItem from '@mui/material/ListItem';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -16,10 +17,10 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function ListScroll() {
-  const [selectedIndex, setSelectedIndex] = React.useState(1);
-  const handleListItemClick = (event, index) => {
-    setSelectedIndex(index);
-  };
+  // const [selectedIndex, setSelectedIndex] = React.useState(1);
+  // const handleListItemClick = (event, index) => {
+  //   setSelectedIndex(index);
+  // };
 
   return (
     <>
@@ -27,7 +28,7 @@ export default function ListScroll() {
         sx={{
           backgroundColor: '#424242',
           borderBottom: '2px solid black',
-          width: 200,
+          width: 213,
           mt: 10,
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,
@@ -41,12 +42,12 @@ export default function ListScroll() {
           display: 'flex',
           flexDirection: 'column',
           gap: 3,
-          width: 200,
-          height: 200,
+          width: 213,
+          height: 280,
           '& > div': {
             overflow: 'hidden auto',
             '&::-webkit-scrollbar': {
-              height: 10,
+              height: 5,
               width: 6,
               WebkitAppearance: 'none',
             },
@@ -64,44 +65,39 @@ export default function ListScroll() {
           <List
             component="nav"
             aria-label="secondary mailbox folder"
-            sx={{ height: 200 }}
+            sx={{ height: 280 }}
           >
             {/* <Grid xs={12}> */}
-            <ListItemButton
+            <ListItem
               sx={{ borderBottom: '2px solid black' }}
-              selected={selectedIndex === 1}
-              onClick={event => handleListItemClick(event, 1)}
+              //onClick={event => handleListItemClick(event, 1)}
             >
               Scroll bar appears
-            </ListItemButton>
-            <ListItemButton
+            </ListItem>
+            <ListItem
               sx={{ borderBottom: '2px solid black' }}
-              selected={selectedIndex === 2}
-              onClick={event => handleListItemClick(event, 2)}
+              //onClick={event => handleListItemClick(event, 2)}
             >
               Scroll bar appears
-            </ListItemButton>
-            <ListItemButton
+            </ListItem>
+            <ListItem
               sx={{ borderBottom: '2px solid black' }}
-              selected={selectedIndex === 3}
-              onClick={event => handleListItemClick(event, 3)}
+              //onClick={event => handleListItemClick(event, 3)}
             >
               Scroll bar appears
-            </ListItemButton>
-            <ListItemButton
+            </ListItem>
+            <ListItem
               sx={{ borderBottom: '2px solid black' }}
-              selected={selectedIndex === 4}
-              onClick={event => handleListItemClick(event, 4)}
+              //onClick={event => handleListItemClick(event, 4)}
             >
               Scroll bar appears
-            </ListItemButton>
-            <ListItemButton
+            </ListItem>
+            <ListItem
               sx={{ borderBottom: '2px solid black' }}
-              selected={selectedIndex === 5}
-              onClick={event => handleListItemClick(event, 5)}
+              //onClick={event => handleListItemClick(event, 5)}
             >
               Scroll bar appears
-            </ListItemButton>
+            </ListItem>
             {/* <Item>Scroll bar appears</Item>
             <Item>Scroll bar appears</Item>
             <Item>Scroll bar appears</Item>

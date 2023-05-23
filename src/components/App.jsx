@@ -3,6 +3,7 @@ import CustomizedTables from './Table/Table';
 import SelectedListItem from './List/List';
 import ListScroll from './ListScroll/ListScroll';
 import SelectLabels from './Select/Select';
+import ScrollList from './ScrollList/ScrollList';
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
       {/* <SelectedListItem /> */}
       <ListScroll />
       <SelectLabels />
+      <ScrollList />
     </div>
   );
 };
