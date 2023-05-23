@@ -1,0 +1,34 @@
+.btnWrapper {
+  display: flex;
+}
+
+.btn {
+  width: 138px;
+  height: 40px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
+  /* display: flex;
+align-items: center;
+text-align: center; */
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background-color: #383847;
+  border: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #f6f7fb;
+}
+
+.btn:hover {
+  color: #60c470;
+}
+
+.form {
+  height: 50px;
+  background-color: #383847;
+}

@@ -1,16 +1,17 @@
+import Home from './Home/Home';
+import CustomizedTables from './Table/Table';
+import SelectedListItem from './List/List';
+import ListScroll from './ListScroll/ListScroll';
+import SelectLabels from './Select/Select';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Home />
+      <CustomizedTables />
+      {/* <SelectedListItem /> */}
+      <ListScroll />
+      <SelectLabels />
     </div>
   );
 };
